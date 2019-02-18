@@ -1,3 +1,236 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.test {
+	outline: red solid 1px;
+}
+
+/* Container Div */
+.container {
+	width: 876px;
+	margin: 0 auto;
+}
+
+/* Navbar */
+nav {
+	margin-top: 27px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav a {
+	font-size: 14px;
+	color: darkgray;
+	text-decoration: none;
+}
+
+/* Footer */
+footer {
+	text-align: center;
+	font-size: 14px;
+	margin: 54px 0 115px 0;
+}
+
+/* =====INDEX STYLES===== */
+#index p {
+	line-height: 1.15;
+}
+
+/* Index Header */
+#index header {
+	padding: 68px 0 77px 0;
+	border-bottom: 1px solid black;
+	display: flex;
+}
+
+#index header .header-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+#index header h1 {
+	font-size: 77px;
+	text-align: center;
+}
+
+#index header button {
+	color: black;
+	background: white;
+	border: 1px solid black;
+	padding: 5px 40px;
+	font-size: 16px;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+/* Index Content Sections */
+
+#index .content {
+	margin-top: 39px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#index .content article {
+	margin-right: 20px;
+}
+
+#index .content article:last-of-type {
+	margin-right: 0;
+}
+
+#index .middle-img {
+	margin-top: 37px;
+}
+
+/* Index Contact */
+#index .contact {
+	margin-top: 44px;
+	border-top: 1px solid black;
+	padding-top: 39px;
+}
+
+#index .contact p {
+	margin-top: 17px;
+}
+
+/* =====SERVICES STYLES===== */
+#services p {
+	line-height: 1.25;
+}
+
+#services h2 {
+	margin-bottom: 18px;
+}
+
+/* Services Header */
+#services header {
+	padding: 21px 0 40px 0;
+	border-bottom: 1px solid black;
+}
+
+#services header h1 {
+	margin-top: 30px;
+	font-size: 26px;
+}
+
+/* Services Main */
+#services .blocks {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+
+#services .blocks article {
+	width: 420px;
+	background: #f4f4f4;
+	border: 1px solid black;
+	padding: 20px;
+	margin: 20px 0;
+}
+
+#services .blocks article button {
+	color: black;
+	text-decoration: none;
+	font-size: 11px;
+	padding: 11px 41px;
+	background: white;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+#services .facts {
+	display: flex;
+	padding-top: 42px;
+	border-top: 1px solid black;
+}
+
+#services .facts article {
+	margin-right: 37px;
+}
+
+#services .facts ul {
+	list-style-type: square;
+	margin: 27px 0 0 20px;
+}
+
+#services .facts ul li {
+	margin-top: 14px;
+}
